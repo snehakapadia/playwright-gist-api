@@ -12,5 +12,9 @@ export default defineConfig({
       'Accept': 'application/vnd.github+json',
       'Authorization': `Bearer ${process.env.TOKEN}`
     }
-  }
+  },
+  reporter: [
+    ['list'],  
+    ['html', { outputFolder: 'playwright-report', open: 'never' }]  // generate HTML report
+  ]
 });
