@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 test('Create Gist with description, filename', async ({ page }) => {
   // Go to GitHub login
   await page.goto('https://github.com/login');
-  await page.fill('input[name="login"]', process.env["GITHUB_USERNAME"]!);
-  await page.fill('input[name="password"]', process.env["GITHUB_PASSWORD"]!);
+  await page.fill('input[name="login"]', process.env["USERNAME"]!);
+  await page.fill('input[name="password"]', process.env["PASSWORD"]!);
   await page.click('input[name="commit"]');
   await page.waitForURL('https://github.com/');
 
@@ -24,13 +24,13 @@ test('Create Gist with description, filename', async ({ page }) => {
 test('View your Gists', async ({ page }) => {
   //  Log in to GitHub
   await page.goto('https://github.com/login');
-  await page.fill('input[name="login"]', process.env["GITHUB_USERNAME"]!);
-  await page.fill('input[name="password"]', process.env["GITHUB_PASSWORD"]!);
+  await page.fill('input[name="login"]', process.env["USERNAME"]!);
+  await page.fill('input[name="password"]', process.env["PASSWORD"]!);
   await page.click('input[name="commit"]');
   await page.waitForURL('https://github.com/');
 
   // Navigate to your Gists page
-  const GITHUB_USER = process.env["GITHUB_USERNAME"]!;
+  const GITHUB_USER = process.env["USERNAME"]!;
   await page.goto(`https://gist.github.com/${GITHUB_USER}`);
 
   // Validate that at least one Gist is visible

@@ -49,9 +49,9 @@ jobs:
       # 5️⃣ Setup environment variables from secrets
       - name: Setup environment variables
         run: |
-          echo "GITHUB_USERNAME=${{ secrets.GITHUB_USERNAME }}" >> $GITHUB_ENV
-          echo "GITHUB_PASSWORD=${{ secrets.GITHUB_PASSWORD }}" >> $GITHUB_ENV
-          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+          echo "USERNAME=${{ secrets.USERNAME }}" >> $GITHUB_ENV
+          echo "PASSWORD=${{ secrets.PASSWORD }}" >> $GITHUB_ENV
+          echo "TOKEN=${{ secrets.TOKEN }}" >> $GITHUB_ENV
 
       # 6️⃣ Run API tests
       - name: Run API Tests

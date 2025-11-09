@@ -10,7 +10,7 @@ export default defineConfig({
     baseURL: 'https://api.github.com',
     extraHTTPHeaders: {
       'Accept': 'application/vnd.github+json',
-      'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`
+      'Authorization': `Bearer ${process.env.TOKEN}`
     }
   }
 });
