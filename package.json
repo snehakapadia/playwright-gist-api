@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "npx playwright test",
+    "test:gist-api": "npx playwright test tests/api --reporter=list",
+    "test:gist-ui": "npx playwright test tests/ui --reporter=list",
     "test:gist": "npx playwright test tests/gist.spec.ts"
   },
   "devDependencies": {
