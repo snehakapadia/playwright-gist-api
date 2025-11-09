@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Playwright test results
+test-results/
+playwright-report/
+blob-report/
+trace.zip
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db

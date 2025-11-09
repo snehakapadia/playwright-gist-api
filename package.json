@@ -1,0 +1,13 @@
+{
+  "name": "playwright-gist-api",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:gist": "npx playwright test tests/gist.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^24.10.0",
+    "dotenv": "^16.3.1"
+  }
+}
