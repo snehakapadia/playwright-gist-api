@@ -60,6 +60,9 @@ jobs:
           echo "▶️ Running API tests..."
           npm run test:gist-api
 
+      - name: Setup auth.json
+        run: echo "${{ secrets.AUTH_JSON }}" > auth.json
+
       # 7️⃣ Run UI tests (only when manually selected)
       - name: Run UI Tests
         if: ${{ github.event.inputs.test_type == 'ui' }}
