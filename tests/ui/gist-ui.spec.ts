@@ -5,7 +5,7 @@ require('dotenv').config();
 const AUTH_FILE = 'auth.json';
 
 test.describe('GitHub Gist UI Tests', () => {
-  
+  test.use({ storageState: 'auth.json' }); // Only UI tests use auth.json
   test.beforeEach(async ({ page }) => {
     await page.goto('https://github.com/');
   });

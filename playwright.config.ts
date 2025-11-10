@@ -8,7 +8,6 @@ export default defineConfig({
   timeout: 30000,
   use: {
     baseURL: 'https://api.github.com',
-    storageState: 'auth.json',
     extraHTTPHeaders: {
       'Accept': 'application/vnd.github+json',
       'Authorization': `Bearer ${process.env.TOKEN}`
