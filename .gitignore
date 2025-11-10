@@ -4,6 +4,9 @@ node_modules/
 # Environment variables
 .env
 
+# auth
+auth.json
+
 # Playwright test results
 test-results/
 playwright-report/

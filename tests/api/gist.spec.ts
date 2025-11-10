@@ -167,3 +167,18 @@ test.describe('GitHub Gist API', () => {
     });
     expect([400, 422]).toContain(response.status());
   });
+
+  //Long description
+  test('Long description Edge case', async ({ request }) => {
+    const token = process.env.TOKEN; 
+    const longDesc = 'Description '.repeat(1000); 
+    const response = await request.post('/gists', {
+      headers: { Authorization: `Bearer ${token}` },
+      data: {
+        description: longDesc,
+        public: true,
+        files: { 'Ti.txt': { content: 'Test' } }
+      }
+    });
+    expect(response.status()).toBe(422); // successful gist creation
+  });
