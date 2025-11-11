@@ -67,6 +67,13 @@ Step 7: CI/CD Integration
 
 Step 8 : Post-Deployment Verification 
     Confirm the new feature works in production.
+
+Step 9 : Monitoring
+    Use monitoring tools to check for any issues.
+
+Step 10 : Continuous Maintenance
+    Refactor flaky or outdated tests regularly.
+    Keep manual test cases aligned with product documentation.
     
 
 ## 2. Tools & Framework 
@@ -119,13 +126,3 @@ Step 8 : Post-Deployment Verification
 | TC_API_15    | Fork Gist                       | POST /gists/:gist_id/forks                             | Fork a gist (positive and negative)                     | 201 Created for valid gist, 403/404 for invalid or private gist                 |
 
 
-# POST DEPLYMENT VERIFICATION
-
-Confirm the new feature works in production.
-
-# MONITORING
-Use monitoring tools to check for any issues.
-
-# CONTINUOUS MAINTENANCE
-Refactor flaky or outdated tests regularly.
-Keep manual test cases aligned with product documentation.
