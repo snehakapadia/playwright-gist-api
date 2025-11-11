@@ -8,6 +8,9 @@ What is GIST
 GIST is like a mini Git repository that can be public or secret.
 We can quickly share code snippets, small scripts, configs or notes .
 
+Show Demo of GIST functionality on https://gist.github.com/
+Show Demo of GIST operations in POSTMAN on https://gist.github.com/
+
 :
 **Prerequesites:**
 
@@ -74,7 +77,6 @@ Step 9 : Monitoring
 Step 10 : Continuous Maintenance
     Refactor flaky or outdated tests regularly.
     Keep manual test cases aligned with product documentation.
-    
 
 ## 2. Tools & Framework 
     Playwright: API & UI testing
