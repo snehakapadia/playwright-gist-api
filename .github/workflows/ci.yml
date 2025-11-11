@@ -1,14 +1,11 @@
 name: Playwright Gist Tests
 
-# -------------------------------
-# ✅ Triggers
-# -------------------------------
 on:
   push:
-    branches: [ main ]              # Run automatically on pushes to main
+    branches: [ main ]             
   pull_request:
-    branches: [ main ]              # Run automatically on PRs to main
-  workflow_dispatch:                # Allow manual trigger in GitHub UI
+    branches: [ main ]           
+  workflow_dispatch:              
     inputs:
       test_type:
         description: 'Select which tests to run (api or ui)'
@@ -19,9 +16,6 @@ on:
           - api
           - ui
 
-# -------------------------------
-# ✅ Job Definition
-# -------------------------------
 jobs:
   test:
     name: Run Playwright Tests
